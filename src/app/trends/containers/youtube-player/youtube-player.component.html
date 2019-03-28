@@ -1,0 +1,16 @@
+<div class="row VideoPlayer">
+  <div class="col-xs-12 VideoPlayer__background">
+    <iframe width="100%"
+      height="500"
+      (load)='loadVideo()'
+      [src]="embedUrl$ | async"
+      frameborder="0"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 video-feeds">
+    <app-youtube-feeds></app-youtube-feeds>
+  </div>
+</div>

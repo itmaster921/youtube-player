@@ -1,0 +1,51 @@
+:host {
+  display: block;
+}
+
+.YoutubeListingCard {
+  cursor: pointer;
+  transition: all 200ms;
+  display: -webkit-inline-box;
+  width: 100%;
+  margin-bottom: 25px;
+  box-shadow: 0 0px 1px #efefef;
+  border: 0;
+  &:hover {
+    box-shadow: 0 2px 20px 2px #bbb;
+    transform: translateY(-3%);
+    border: 0;
+    .YoutubeListingCard__thumbnail_container {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+  
+  &__thumbnail_container {
+    width: 120px;
+    overflow: hidden;
+    img {
+      width: 120px;
+      height: 90px;
+      transition: transform 500ms;
+      background-color: grey;
+    }
+  }
+  
+  &__content {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    &_title {
+      font-size: 1.5rem;
+      color: #2381C9;
+      @media screen and (max-width: 500px) {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+    }
+
+    &_statistics {
+      padding-top: 0;
+    }
+  }
+}

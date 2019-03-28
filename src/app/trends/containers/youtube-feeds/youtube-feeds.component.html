@@ -1,0 +1,14 @@
+<div class="YoutubeListings"
+    infiniteScroll
+    [infiniteScrollDistance]="3"
+    [infiniteScrollThrottle]="500"
+    (scrolled)="onScroll()">
+  <div class="row">
+    <div class="col-md-6 col-lg-4 col-sm-12" *ngFor="let video of trendingVideos; trackBy: trackByFn; let i = index">
+      <app-youtube-feed-card
+        [ngClass]="{'YoutubeListings__loading-card': loader && isNewSearch}"
+        [video]="video"></app-youtube-feed-card>
+    </div>
+  </div>
+</div>
+<div class="loader bg-faded loader--modifier" [ngClass]="{'mt-0': trendingVideos?.length === 0}" [hidden]="!loader"></div>

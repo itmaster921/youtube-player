@@ -1,0 +1,25 @@
+@import '../node_modules/ng2-toasty/bundles/style-default.css';
+
+/* custom css here */
+
+.loader {
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  background-image: url('/assets/loader.gif');
+  background-blend-mode: darken;
+  width: 150px;
+  height: 150px;
+  display: table;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+
+.dropdown-menu {
+  font-size: 12px;
+  width: calc(100% - 30px);
+}
+
+.dropdown-menu .active {
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0)
+}
