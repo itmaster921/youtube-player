@@ -15,12 +15,12 @@ module.exports = function (config) {
     files: [
       { pattern: './src/test.ts', watched: false }
     ],
-    preprocessors: {
-      './src/test.ts': ['@angular/cli']
-    },
-    mime: {
-      'text/x-typescript': ['ts','tsx']
-    },
+    // preprocessors: {
+    //   './src/test.ts': ['@angular/cli']
+    // },
+    // mime: {
+    //   'text/x-typescript': ['ts','tsx']
+    // },
     remapIstanbulReporter: {
       reports: {
         html: 'coverage',
